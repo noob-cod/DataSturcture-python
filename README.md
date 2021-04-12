@@ -1,10 +1,11 @@
 # DataSturcture-python
 
 ## Graph
-+ **ArrayLinkGraph.py**：基于链表的图的数据结构的实现
++ **ArrayLinkGraph.py**：基于链表的图的数据结构的实现（未完成）
 + **MatrixGraph.py**：基于matrix的图的数据结构的实现
 
 ## interface
+《数据结构（python语言描述）》中的代码
 + **baginterface.py**：包的接口
 + **queue_interface.py**：队列的接口
 + **stackinterface.py**：栈的接口
