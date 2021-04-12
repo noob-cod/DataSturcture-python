@@ -10,6 +10,7 @@
 + **stackinterface.py**：栈的接口
 
 ## pythonDataStructure
+《数据结构（python语言描述）》中的代码
 + **abstractbag.py**：抽象包的接口
 + **arrays.py**：数组
 + **bag_array.py**：基于数组的包的实现
