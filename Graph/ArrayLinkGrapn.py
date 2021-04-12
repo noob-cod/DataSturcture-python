@@ -16,7 +16,12 @@ class ArrayLinkGraph:
         :param directed: Bool, if True create directed graph, else create undirected graph.
         :param weighted: Bool, if True save edge weight, else not.
         """
-        pass
+        self.node_num = num_of_nods  # number of nodes
+        self.edge_num = len(edges_list)  # number of edges
+        self.directed = directed  # directed or not
+        self.weighted = weighted  # weighted or not
+        self.mat = [[0] * self.node_num for _ in range(self.node_num)]  # create empty mat
+        self.node_name_dict = {}  # save name of nodes
 
     def __len__(self):
         pass
