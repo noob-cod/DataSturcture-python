@@ -3,6 +3,9 @@
 @Author: Chen Zhang
 @Brief: 基于链表的图的实现
 """
+import os
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath('ArrayLinkGraph.py'))))
 
 
 class ArrayLinkGraph:
@@ -20,7 +23,7 @@ class ArrayLinkGraph:
         self.edge_num = len(edges_list)  # number of edges
         self.directed = directed  # directed or not
         self.weighted = weighted  # weighted or not
-        self.mat = [[0] * self.node_num for _ in range(self.node_num)]  # create empty mat
+        self.llist = OnewayLinkedlist()  # graph
         self.node_name_dict = {}  # save name of nodes
 
     def __len__(self):
