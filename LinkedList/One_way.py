@@ -22,7 +22,12 @@ class OnewayLinkedlist:
         return self._num
 
     def __str__(self):
-        return ' '.join(str(map(lambda x: x.val, self)))  # 无法打印
+        string = []
+        cursor = self.head
+        while cursor:
+            string.append(cursor.val)
+            cursor = cursor.next
+        return ' '.join(map(str, string))
 
     def is_Empty(self):
         return len(self) == 0
